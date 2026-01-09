@@ -1,0 +1,42 @@
+const publications = [
+    {
+        title: '"Hoovered up as a data point": Exploring Privacy Behaviours, Awareness, and Concerns Among UK Users of LLM-based Conversational Agents',
+        short_title: 'Do Users Understand the Privacy Risks of AI Chatbots?',
+        date: 'July 2025',
+        authors: 'Lisa Mekioussa Malki, Akhil Polamarasetty, Majid Hatamian, Mark Warner, Enrico Costanza',
+        venue: 'Proceedings on Privacy Enhancing Technologies 2025',
+        doi: 'https://doi.org/10.56553/popets-2025-0160',
+        shortDesc: `In this project, I investigated public perceptions of data privacy in AI chatbots through a survey of over 200 ChatGPT, Google Gemini, and Microsoft Copilot users. The study identified significant gaps in users’ comprehension of data deletion and opt-out mechanisms, highlighting the need for features that enhance user control over personal data.`,
+        abstract: `Large Language Models (LLMs) are widely used in conversational agents (CAs) due to their ability to generate coherent and human-like text. However, their deployment raises significant privacy concerns, as users often share sensitive data in prompts. This data can be used to train the underlying LLM, introducing memorisation risks and challenging users' right to be forgotten. While these issues have been explored from a technical standpoint, little is known about how users perceive and navigate privacy issues in their day-to-day use of LLM-based CAs. To address this research gap, we conducted a survey of UK-based CA users (n=211) that focused on their privacy behaviours, self-disclosure boundaries, concerns, and awareness of LLM-specific privacy issues. We found that engagement with protective behaviours was low overall, and that many participants held inaccurate beliefs about the effects of deleting data and opting out of model training. Although participants were generally reluctant to share sensitive information during interactions, we identified several challenges to limiting self-disclosure in practice, such as balancing privacy with app utility. Lastly, we observed a nuanced relationship between privacy awareness and concern, and identified significant demographic effects. We propose design avenues for privacy-supportive tools, and discuss the implications of our work for regulation and governance.`
+    },
+    {
+        title: 'Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World',
+        short_title: 'Exploring the Privacy and Safety of Period Tracking Apps',
+        date: 'May 2024',
+        authors: 'Lisa Mekioussa Malki, Ina Kaleva, Dilisha Patel, Mark Warner, and Ruba Abu-Salma',
+        venue: 'Proceedings of the ACM CHI Conference on Human Factors in Computing Systems',
+        doi: 'https://dl.acm.org/doi/10.1145/3613904.3642521',
+        shortDesc: 'Period tracking apps are used by millions worldwide, but how safe is user data? We evaluated the privacy policies and in-app privacy features of twenty period-tracking apps, focusing on issues such as data collection, third-party sharing, and user autonomy.',
+        abstract: `Mobile apps which support women’s health have developed rapidly alongside the increasing de-stigmatisation of female reproductive wellbeing. However, the ubiquity of these apps has advanced the practice of intimate surveillance and the commodification of sensitive user data. While the overturning of Roe v. Wade has prompted reflection on the privacy and safety implications of female mobile health (mHealth) apps, the privacy practices of these apps have yet to be thoroughly examined in a post-Roe world. We investigated the privacy practices of 20 popular female mHealth apps, combining a thematic analysis of Data safety sections and privacy policies with a privacy-focused usability inspection. Our findings revealed problematic practices, including inconsistencies across privacy policy content and privacy-related app features, flawed consent and data deletion mechanisms, and covert gathering of sensitive data. We present recommendations for improving privacy practices, and call for a dedicated focus not only on user privacy, but also safety.`
+    },
+    {
+        title: '"The Headline Was So Wild That I Had To Check": An Exploration of Women\’s Encounters With Health Misinformation on Social Media',
+        short_title: 'Decoding the Online Ecosystem of Health Misinformation',
+        date: 'April 2024',
+        authors: 'Lisa Mekioussa Malki, Dilisha Patel, and Aneesha Singh',
+        venue: 'Proceedings of the ACM on Human-Computer Interaction (CSCW)',
+        doi: 'https://dl.acm.org/doi/abs/10.1145/3637405',
+        shortDesc: `This project explored women’s health misinformation on social media, focusing on the persuasive tactics used to spread it. Dieting misinformation was the most prevalent, often conveyed through emotionally charged and pseudo-scientific narratives. Users employed strategies such as cross-referencing sources, consulting online communities, and assessing influencer credibility to evaluate information. We highlight the persistence of health misinformation and the cognitive effort required for users to navigate it critically.`,
+        abstract: `Misinformation has emerged as a significant threat to public health in recent years and has been observed across numerous health issues, the most prolific being COVID-19. Though increasing attention has been paid to women's health within the social scientific and HCI communities, very little research has holistically explored the unique challenges women face when navigating health misinformation. To address this gap, we conducted a qualitative diary and interview study aimed at investigating women's perceptions and lived experiences of health misinformation on social media, and how they respond emotionally and behaviourally to health misinformation encountered in their day-to-day lives. We found that participants perceived health misinformation as ubiquitous and poorly-managed by social media platforms, resulting in a lack of trust in current moderation and fact-checking interventions. We also observed that encounters with misinformation triggered negative emotional responses, which participants attempted to navigate through ad-hoc strategies such as drawing on personal experience and reading social media comment sections, which facilitated collective sensemaking. We discuss our findings in relation to the design of targeted interventions which empower women to engage constructively with health information on social media. In particular, we underscore the importance of trust, accountability, and intersectionality in future design and research practice, and encourage a holistic view of how women are impacted by misinformation.`
+    },
+    {
+        title: 'A Mixed-Methods Analysis of Women’s Health Misinformation on Social Media',
+        date: 'August 2023',
+        authors: 'Lisa Mekioussa Malki, Dilisha Patel, and Aneesha Singh',
+        venue: 'IFIP Conference on Human-Computer Interaction, Springer Nature Switzerland',
+        doi: 'https://link.springer.com/chapter/10.1007/978-3-031-42286-7_22',
+        abstract: `Propelled by the COVID-19 pandemic and recent overturning of Roe vs. Wade in the United States, concerns have grown around the proliferation of reproductive health misinformation online. While a body of work in HCI has explored female health and wellbeing from a socio-technical perspective, a knowledge gap relating to women’s health misinformation and how it presents on social media remains. We report a mixed-methods content analysis of the ideological rhetoric, sources, and claims present in a sample of 202 officially fact-checked posts relating to female reproductive health. We found that reproductive health misinformation is diverse in its sources and represents a range of ideological standpoints, including pro-choice, feminist, and anti-authority rhetoric. We also found that claims are often tacit in nature, and rely on subtle manipulation and exaggerations to convey misleading narratives, as opposed to complete fabrications. In sum, we present a timely and nuanced analysis of the women’s health misinformation ecosystem. Our findings may inform priorities for HCI interventions that abate health misinformation, and more broadly, support women in navigating a complex and polarised information landscape.`
+    }
+]
+
+export default publications;
