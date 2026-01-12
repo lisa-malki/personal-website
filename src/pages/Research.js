@@ -1,6 +1,7 @@
 import Navigation from '../components/Header';
 import Footer from '../components/Footer';
 import { Container, Card } from 'react-bootstrap'; 
+import { motion } from "framer-motion";
 
 import Publication from '../components/Research/Publication.js';
 import Talk from '../components/Research/Talk.js';
@@ -13,7 +14,6 @@ import media from '../data/research/media.js';
 import { useEffect } from 'react';
 
 const Research = () => {
-  console.log(media);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -24,10 +24,23 @@ const Research = () => {
       <a href = {article.url} target = '_blank' style = {{fontWeight: '700'}}> {article.headline} </a> - {article.publisher}
       </li>
   );
+
+  const pageVariants = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -20 }
+  };
   
 
   return (
-    <div className="App">
+    <motion.div 
+      className="App"
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      transition={{ duration: 0.4, ease: "easeInOut" }}>
+
       <header id="header">
         <Navigation /> 
       </header>
@@ -69,7 +82,7 @@ const Research = () => {
         </div>
         <footer id="footer"> <Footer /> </footer>
       </main>
-    </div>
+    </motion.div>
   );
 };
 

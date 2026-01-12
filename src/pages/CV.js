@@ -1,6 +1,7 @@
 import Navigation from '../components/Header';
 import Footer from '../components/Footer';
 import { Container, Card } from 'react-bootstrap';
+import { motion } from "framer-motion";
 
 import experiences from '../data/cv/experience.js';
 import degrees from '../data/cv/degrees.js';
@@ -10,9 +11,23 @@ import Job from '../components/CV/Job.js';
 import Degree from '../components/CV/Degree.js';
 import Skills from '../components/CV/Skills.js';
 
+
+const pageVariants = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -20 }
+};
+
 const CV = () => {
   return (
-    <div className="App">
+    <motion.div
+      className="App"
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      transition={{ duration: 0.4, ease: "easeInOut" }}>
+
       <header id="header">
         <Navigation /> 
       </header>
@@ -44,7 +59,6 @@ const CV = () => {
                             <hr></hr>
                             <Skills data={skills} />
                         </div>                          
-            
         
                     </Card.Body>
                 </Card> 
@@ -52,7 +66,7 @@ const CV = () => {
         </div>
         <footer id="footer"> <Footer /> </footer>
       </main>
-    </div>
+    </motion.div>
   );
 };
 

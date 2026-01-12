@@ -8,8 +8,8 @@ const experience = [
         highlights: [
             'Completed a six-month AI and data science internship at the Ministry of Justice, facilitated by the Alan Turing Institute.',
             'Collaborated with a team of data scientists to evaluate the performance of Large Language Models (LLMs) on free-text extraction.',
-            'Designed and implemented a novel framework and code library to quantify gender and ethnic bias across multiple NLP tasks. Benchmarked the performance of different LLM architectures, with findings directly informing team decisions on model architecture, prompting strategies, and guardrails.',
-            'Contributed to an open-source Python package for extracting structured data from free-text using transformer-based models.'
+            'Designed a framework and code library to quantify gender and ethnic bias across multiple NLP tasks. Generated insights which informed team decisions on model architecture, prompting strategies, and guardrails.',
+            'Contributed to an open-source Python package for extracting data from free-text using transformer-based models.'
         ]
     },
     {

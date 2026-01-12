@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Highlight from './Highlight.js';
 import highlights from '../../data/home/highlights.js';
 import Markdown from 'markdown-to-jsx';
-import { Row, Col } from 'react-bootstrap';
+
 
 
 function PersonalIntro() {
@@ -29,7 +29,7 @@ function PersonalIntro() {
                     Doctoral Student in AI and Privacy
                 </h2>
                 
-                < span style={{color: 'white'}}>lisa.malki.21@ucl.ac.uk </span>
+                < a style={{fontWeight: '500', color: 'white'}} href='mailto:lisa.malki.21@ucl.ac.uk'>lisa.malki.21@ucl.ac.uk </a>
                 <br></br>
                 <a style={{fontWeight: '500', color: 'white'}} href='https://scholar.google.com/citations?user=9SxbJ6gAAAAJ&hl=en&oi=ao' target='_blank'>Google Scholar</a>
                 <br></br>
